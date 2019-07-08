@@ -1,0 +1,8 @@
+<h2>New Artist</h2>
+<%= form_for @artist do |artist| %>
+    <%= artist.label "Name: " %><br>
+    <%= artist.text_field :name %><br>
+    <%= artist.label "Bio: " %><br>
+    <%= artist.text_field :bio %><br>
+    <%= artist.submit "Create Artist 🎧" %>
+<% end %>
