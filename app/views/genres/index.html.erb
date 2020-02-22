@@ -1,0 +1,9 @@
+<h1>Genre Index Page</h1>
+
+<% @genres.each do |genre| %>
+    <ul>
+        <li><%= link_to genre.name, genre_path(genre) %></li>
+    </ul>
+<% end %>
+
+<p><%= link_to "Create New Genre", new_genre_path %></p>

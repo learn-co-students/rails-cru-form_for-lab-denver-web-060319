@@ -1,0 +1,9 @@
+<h1>Songs Index</h1>
+
+<% @songs.each do |song| %>
+    <ul>
+        <p><%= link_to song.name, song_path(song) %></p>
+    </ul>
+<% end %>
+
+<p><%= link_to "Create New Song", new_song_path %></p>
